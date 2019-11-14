@@ -14,7 +14,7 @@ puts 'Cleaning database...'
 
 Ingredient.destroy_all
 
-puts 'Creating flast...'
+puts 'Creating ingredients...'
 
 10.times do Ingredient.create!(
   [
