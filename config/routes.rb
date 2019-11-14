@@ -1,3 +1,12 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :cocktails do
+    resources :doses
+  end
+
+  resources :doses, only: :destroy
+  # resources :doses do
+  #   resources :ingredients
+  #   resources :images, only: :index
+  # end
 end
